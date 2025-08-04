@@ -1,0 +1,182 @@
+/* INDEX STYLES STARTS */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.footer {
+  background: #001f3f;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+}
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whatsapp-float {
+  background-color: #25d366;
+  color: white;
+  font-size: 2rem;
+  padding: 2px 7px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-tooltip {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-caption {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  background: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.3)
+  );
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  z-index: 10;
+  width: 90%;
+}
+
+.custom-caption h1,
+.custom-caption p {
+  margin-bottom: 1rem;
+}
+
+/* Divider line between h1 and p */
+.caption-divider {
+  border: none;
+  border-top: 2px solid #ffffff;
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem 0;
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+  .custom-caption {
+    left: 5%;
+    right: 5%;
+    padding: 1.5rem;
+    max-width: 100%;
+    transform: translateY(-40%);
+  }
+
+  .custom-caption h1 {
+    font-size: 1.75rem;
+  }
+
+  .custom-caption p {
+    font-size: 1rem;
+  }
+
+  .caption-divider {
+    max-width: 200px;
+  }
+}
+
+.custom-hover-btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-hover-btn:hover {
+  background-color: #ffc107; /* Bootstrap warning color */
+  color: #000; /* Optional: text turns black on hover */
+}
+
+.image-hover {
+  overflow: hidden;
+}
+
+.image-hover img {
+  transition: transform 0.4s ease;
+}
+
+.image-hover:hover img {
+  transform: scale(1.05);
+}
+
+/* INDEX STYLES END */
+
+/* PROPERTIES STYLES STARTS */
+.property-card img {
+  height: 200px;
+  object-fit: cover;
+}
+.footer {
+  background: #001f3f;
+  color: #fff;
+  padding: 2rem 0;
+}
+.social-icons a {
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+}
+.social-icons a:hover {
+  color: #ffd700;
+}
+/* PROPERTIES STYLES ENDS */
