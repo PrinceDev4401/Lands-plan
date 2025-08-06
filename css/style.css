@@ -83,6 +83,11 @@
   }
 }
 
+.hero-img {
+  height: 100vh;
+  object-fit: cover;
+}
+
 .custom-caption {
   position: absolute;
   top: 50%;
@@ -147,7 +152,7 @@
   color: #000; /* Optional: text turns black on hover */
 }
 
-.image-hover {
+/* .image-hover {
   overflow: hidden;
 }
 
@@ -156,6 +161,14 @@
 }
 
 .image-hover:hover img {
+  transform: scale(1.05);
+} */
+
+.img-fluid {
+  transition: transform 0.4s ease;
+}
+
+.img-fluid:hover {
   transform: scale(1.05);
 }
 
