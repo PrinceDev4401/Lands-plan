@@ -20,8 +20,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <h3>LIBERTY GARDENS ESTATE</h3>
+        <a class="navbar-brand" href="#">
+          <h4>LIBERTY GARDENS ESTATE</h4>
         </a>
         <button
           class="navbar-toggler"
@@ -31,22 +31,23 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="index.html">HOME</a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="about.html">ABOUT</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="properties.html">PROPERTIES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="amenities.html">AMENITIES</a>
+              <a class="nav-link" href="#">AMENITIES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT/a>
+              <a class="btn btn-warning ms-2" href="#">INQUIRE</a>
             </li>
           </ul>
         </div>
@@ -57,61 +58,101 @@
     <section class="py-5 bg-light">
       <div class="container">
         <h2 class="text-center mb-4">Available Properties</h2>
+        <h5 class="text-center mb-5">4 Bedroom & 3 Bedroom</h5>
+
+        <!-- Image Grid -->
+        <div class="row text-center g-4">
+          <!-- Front View -->
+          <div class="col-6 col-md-3">
+            <img
+              src="images/slide1.jpg"
+              alt="Front View"
+              class="img-fluid rounded shadow-sm mb-2 gallery-img"
+              onclick="openModal(this.src, 'Front View')"
+            />
+            <h6 class="fw-bold">Front View</h6>
+          </div>
+
+          <!-- Back View -->
+          <div class="col-6 col-md-3">
+            <img
+              src="images/slide2.jpg"
+              alt="Back View"
+              class="img-fluid rounded shadow-sm mb-2 gallery-img"
+              onclick="openModal(this.src, 'Back View')"
+            />
+            <h6 class="fw-bold">Back View</h6>
+          </div>
+
+          <!-- Side View -->
+          <div class="col-6 col-md-3">
+            <img
+              src="images/slide3.jpg"
+              alt="Side View"
+              class="img-fluid rounded shadow-sm mb-2 gallery-img"
+              onclick="openModal(this.src, 'Side View')"
+            />
+            <h6 class="fw-bold">Side View</h6>
+          </div>
+
+          <!-- Interior View -->
+          <div class="col-6 col-md-3">
+            <img
+              src="images/about-estate.jpg"
+              alt="Interior View"
+              class="img-fluid rounded shadow-sm mb-2 gallery-img"
+              onclick="openModal(this.src, 'Interior View')"
+            />
+            <h6 class="fw-bold">Interior</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Site Layout Section -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">Site Layout Plans</h2>
+        <p class="text-center mb-5">
+          Explore the master layout of Liberty Gardens Estate and the phased
+          development roadmap.
+        </p>
+
         <div class="row g-4">
-          <!-- Property 1 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
+          <!-- General Layout -->
+          <div class="col-md-6 text-center">
+            <div class="card shadow-sm border-0 h-100">
               <img
-                src="images/property1.jpg"
-                class="card-img-top"
-                alt="4 Bedroom House"
+                src="images/general-layout.jpg"
+                alt="General Layout of Site"
+                class="img-fluid rounded-top zoomable"
+                onclick="openFullscreen(this)"
               />
-              <div class="card-body">
-                <h5 class="card-title">4-Bedroom Luxury House</h5>
-                <p class="card-text">
-                  Modern design, spacious interior, and access to premium
-                  amenities.
+              <div class="card-body bg-light">
+                <h5 class="fw-bold mb-2">General Layout of Site</h5>
+                <p class="text-muted mb-0">
+                  A complete overview of the estate, showing residential areas,
+                  amenities, and roads.
                 </p>
-                <a href="featured-4bedroom.html" class="btn btn-warning"
-                  >View Details</a
-                >
               </div>
             </div>
           </div>
 
-          <!-- Property 2 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
+          <!-- Phasing Plan -->
+          <div class="col-md-6 text-center">
+            <div class="card shadow-sm border-0 h-100">
               <img
-                src="images/property1.jpg"
-                class="card-img-top"
-                alt="Plots"
+                src="images/phasing-plan.jpg"
+                alt="Phasing Plan of Site"
+                class="img-fluid rounded-top zoomable"
+                onclick="openFullscreen(this)"
               />
-              <div class="card-body">
-                <h5 class="card-title">Serviced Plots</h5>
-                <p class="card-text">
-                  Buy land and build your dream home in a secure estate
-                  environment.
+              <div class="card-body bg-light">
+                <h5 class="fw-bold mb-2">Phasing Plan of Site</h5>
+                <p class="text-muted mb-0">
+                  View the estate’s development timeline, detailing current and
+                  future construction phases.
                 </p>
-                <a href="#" class="btn btn-warning">View Details</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Property 3 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <img
-                src="images/property1.jpg"
-                class="card-img-top"
-                alt="Apartments"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Modern Apartments</h5>
-                <p class="card-text">
-                  Coming soon – luxury apartments with smart home features.
-                </p>
-                <a href="#" class="btn btn-warning">Learn More</a>
               </div>
             </div>
           </div>
@@ -119,25 +160,131 @@
       </div>
     </section>
 
+    <!-- Fullscreen Viewer Modal -->
+    <div
+      id="fullscreenModal"
+      class="fullscreen-modal"
+      onclick="closeFullscreen()"
+    >
+      <img id="fullscreenImg" />
+      <span class="close-btn" onclick="closeFullscreen()">×</span>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imgModal" class="modal-img" onclick="closeModal()">
+      <span class="close-btn">&times;</span>
+      <img class="modal-content-img" id="modalImage" />
+      <div class="caption" id="modalCaption"></div>
+    </div>
+
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="bg-dark text-white pt-5 pb-4">
       <div class="container">
-        <p>&copy; 2025 Liberty Gardens Estate | Accra, Ghana</p>
-        <div class="social-icons mt-2">
-          <a href="https://facebook.com" target="_blank"
-            ><i class="bx bxl-facebook"></i
-          ></a>
-          <a href="https://instagram.com" target="_blank"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a href="https://twitter.com" target="_blank"
-            ><i class="bx bxl-twitter"></i
-          ></a>
+        <div class="row gy-4">
+          <!-- Contact Info -->
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">Contact Us</h5>
+            <p class="mb-1">
+              <i class="bx bx-phone-call text-warning me-2"></i> +233 245 002
+              044
+            </p>
+            <p class="mb-1">
+              <i class="bx bx-envelope text-warning me-2"></i>
+              info@libertygardenestate.com
+            </p>
+            <p>
+              <i class="bx bx-map text-warning me-2"></i> Liberty Gardens
+              Estate, Accra, Ghana
+            </p>
+          </div>
+
+          <!-- About -->
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">Join Our Community</h5>
+            <p>
+              Follow us on social media for updates,<br />
+              promotions, and lifestyle tips.
+            </p>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">Connect With Us</h5>
+            <div class="d-flex gap-3">
+              <a
+                href="https://facebook.com"
+                class="text-white fs-4"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="bx bxl-facebook-circle"></i>
+              </a>
+              <a
+                href="https://instagram.com"
+                class="text-white fs-4"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="bx bxl-instagram-alt"></i>
+              </a>
+              <a
+                href="https://twitter.com"
+                class="text-white fs-4"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Line -->
+        <div class="text-center mt-4 border-top pt-3">
+          <p class="mb-0">
+            &copy; 2025 Liberty Gardens Estate. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-container">
+      <div class="whatsapp-tooltip show">Message us 👋</div>
+      <a
+        href="https://wa.me/233500016673?text=Hello%20Liberty%20Gardens%20Estate"
+        class="whatsapp-float"
+        target="_blank"
+        aria-label="Chat on WhatsApp"
+      >
+        <i class="bx bxl-whatsapp"></i>
+      </a>
+    </div>
+
+    <script>
+      function openModal(src, caption) {
+        document.getElementById("imgModal").style.display = "block";
+        document.getElementById("modalImage").src = src;
+        document.getElementById("modalCaption").innerText = caption;
+      }
+
+      function closeModal() {
+        document.getElementById("imgModal").style.display = "none";
+      }
+
+      function openFullscreen(imgElement) {
+        const modal = document.getElementById("fullscreenModal");
+        const modalImg = document.getElementById("fullscreenImg");
+        modal.style.display = "flex";
+        modalImg.src = imgElement.src;
+      }
+
+      function closeFullscreen() {
+        document.getElementById("fullscreenModal").style.display = "none";
+      }
+    </script>
   </body>
 </html>
