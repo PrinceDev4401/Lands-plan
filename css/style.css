@@ -1,0 +1,272 @@
+/* INDEX STYLES STARTS */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.footer {
+  background: #001f3f;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+}
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-float {
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px; /* increased padding */
+  font-size: 28px; /* larger icon size */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+.whatsapp-tooltip {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  position: absolute;
+  right: 60px; /* move tooltip to the left of the button */
+  bottom: 50%;
+  transform: translateY(50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.whatsapp-tooltip.show {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.custom-caption {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  background: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.3)
+  );
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  z-index: 10;
+  width: 90%;
+}
+
+.custom-caption h1,
+.custom-caption p {
+  margin-bottom: 1rem;
+}
+
+/* Divider line between h1 and p */
+.caption-divider {
+  border: none;
+  border-top: 2px solid #ffffff;
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem 0;
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+  .custom-caption {
+    left: 5%;
+    right: 5%;
+    padding: 1.5rem;
+    max-width: 100%;
+    transform: translateY(-40%);
+  }
+
+  .custom-caption h1 {
+    font-size: 1.75rem;
+  }
+
+  .custom-caption p {
+    font-size: 1rem;
+  }
+
+  .caption-divider {
+    max-width: 200px;
+  }
+}
+
+.custom-hover-btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-hover-btn:hover {
+  background-color: #ffc107; /* Bootstrap warning color */
+  color: #000; /* Optional: text turns black on hover */
+}
+
+/* .image-hover {
+  overflow: hidden;
+}
+
+.image-hover img {
+  transition: transform 0.4s ease;
+}
+
+.image-hover:hover img {
+  transform: scale(1.05);
+} */
+
+.img-fluid {
+  transition: transform 0.4s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+}
+
+/* INDEX STYLES END */
+
+/* PROPERTIES STYLES STARTS */
+.property-card img {
+  height: 200px;
+  object-fit: cover;
+}
+/* Modal styles */
+.modal-img {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content-img {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.caption {
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  font-size: 18px;
+}
+.fullscreen-modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen-modal img {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer {
+  background: #001f3f;
+  color: #fff;
+  padding: 2rem 0;
+}
+.social-icons a {
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+}
+.social-icons a:hover {
+  color: #ffd700;
+}
+/* PROPERTIES STYLES ENDS */
+
