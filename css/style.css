@@ -268,5 +268,15 @@
 .social-icons a:hover {
   color: #ffd700;
 }
-/* PROPERTIES STYLES ENDS */
 
+/* Remove hover zoom from logo only */
+.no-zoom {
+  transition: none !important;
+  transform: none !important;
+}
+
+.no-zoom:hover {
+  transform: none !important;
+}
+
+/* PROPERTIES STYLES ENDS */
