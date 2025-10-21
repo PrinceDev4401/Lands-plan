@@ -18,3 +18,12 @@ setTimeout(() => {
   const tooltip = document.querySelector(".whatsapp-tooltip");
   if (tooltip) tooltip.style.display = "none";
 }, 10000);
+
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 0) {
+    navbar.classList.add("navbar-shadow");
+  } else {
+    navbar.classList.remove("navbar-shadow");
+  }
+});
