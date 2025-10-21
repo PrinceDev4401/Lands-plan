@@ -14,14 +14,22 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav
+      style="background: rgb(255, 255, 255); color: #001f3f; font-weight: 400; font-size: 1.2rem;"
+      class="navbar navbar-expand-lg sticky-top"
+    >
       <div class="container">
         <a class="navbar-brand" href="#">
-          <h4>LIBERTY GARDENS ESTATE</h4>
+          <h4>Liberty Gardens Estate</h4>
         </a>
         <button
           class="navbar-toggler"
@@ -35,35 +43,56 @@
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="properties.html">PROPERTIES</a>
+              <a class="nav-link active" href="properties.html">Properties</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-warning ms-2" href="contact.html">INQUIRE</a>
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a
+                style="background-color: #bd9448"
+                class="btn text-light ms-2"
+                href="contact.html"
+                >Inquire</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <div class="container">
+      <p
+        style="
+          font-size: 3rem;
+          background-color: rgb(255, 255, 255);
+          color: #001f3f;
+          margin: 0 0;
+          padding: 10px 20px;
+        "
+        class="header-title text-left lead"
+      >
+        Willow Lane
+      </p>
+
+    </div>
     <!-- Properties Section -->
     <section class="py-5" style="background-color: #001f3f">
       <div class="container">
         <!-- Title Above Slideshow -->
-        <p style="font-size: 2rem" class="text-center mb-2 text-light lead">
-          4 Bedroom & 3 Bedroom
-        </p>
 
         <!-- Slideshow with Fade Effect -->
         <div
           id="propertiesCarousel"
-          class="carousel slide carousel-fade shadow rounded overflow-hidden"
+          class="carousel slide carousel-fade shadow rounded overflow-hidden w-100"
           data-bs-ride="carousel"
+          style="max-width: 100vw"
         >
           <div class="carousel-inner">
             <!-- Front View -->
@@ -157,157 +186,210 @@
             class="img-fluid no-zoom"
             style="max-width: 180px"
           />
+          <p
+            style="font-size: 1.5rem; color: #bd9448"
+            class="text-uppercase lead"
+          >
+            Willow Lane
+          </p>
         </div>
 
+        <div class="mt-3 text-center text-light">
+          <p style="font-size: 1.9rem; color: #bd9448" class="lead">
+            Introducing Willow Lane, an exceptional residential enclave where
+            <br />
+            elegance meets tranquility.
+          </p>
+        </div>
         <!-- Intro Text Below Logo -->
         <div class="mt-3 text-center text-light">
-          <p class="lead">
-            An exceptional residential enclave where elegance meets tranquility.
-            <br />
-            Over 100 thoughtfully designed homes, blending architectural
-            excellence with refined living in harmony with nature.
+          <p style="font-size: 1rem; font-weight: 400" class="">
+            Set within the embrace of nature’s serenity, this distinguished real
+            estate project boasts a collection of over 100 <br />
+            thoughtfully crafted homes, creating a harmonious blend of
+            architectural excellence and refined living.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Amenities & Pricing Section -->
-    <section class="py-5 bg-light">
+    <section class="features-section py-5">
       <div class="container">
-        <h2 class="text-center fw-bold mb-4">Amenities & Pricing</h2>
-        <p class="text-center mb-5">
-          Discover the exclusive features and affordable pricing options at
-          Liberty Gardens Estate.
-        </p>
+        <h2 style="font-size: 2rem" class="section-title text-left mb-5 lead">
+          Features & Amenities
+        </h2>
 
-        <div class="row g-4">
-          <!-- Amenities -->
-          <div class="col-md-6">
-            <div class="card shadow-sm border-0 h-100">
-              <div class="card-body">
-                <h5 class="fw-bold mb-3">Estate Amenities</h5>
-                <ul class="list-unstyled">
-                  <li>
-                    <i class="bx bx-check-circle text-success me-2"></i> 24/7
-                    Security
-                  </li>
-                  <li>
-                    <i class="bx bx-check-circle text-success me-2"></i> Gated
-                    Community
-                  </li>
-                  <li>
-                    <i class="bx bx-check-circle text-success me-2"></i> Modern
-                    Road Network
-                  </li>
-                  <li>
-                    <i class="bx bx-check-circle text-success me-2"></i> Green
-                    Spaces & Playgrounds
-                  </li>
-                  <li>
-                    <i class="bx bx-check-circle text-success me-2"></i> Water &
-                    Power Supply
-                  </li>
-                  <li>
-                    <i class="bx bx-check-circle text-success me-2"></i>
-                    Clubhouse & Recreation
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <div class="row">
+          <!-- Community Amenities -->
+          <div class="col-md-4">
+            <h5 style="font-weight: 400" class="lead mb-3">
+              Community Amenities and <br />
+              Features
+            </h5>
+            <ul class="list-unstyled features-list">
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> Gated community</li>
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> 24/7 security</li>
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> Garden</li>
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> Children’s playground</li>
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> Multipurpose Sports Court</li>
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> Internal road networks</li>
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> On-site facility management office</li>
+            </ul>
           </div>
 
-          <!-- Pricing -->
-          <div class="col-md-6">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <div class="card-body">
-                <h5 class="fw-bold mb-3">House Prices</h5>
-                <p class="fs-5 mb-2">4 Bedroom House</p>
-                <p class="fw-bold text-success fs-4">USD 160,000</p>
-                <hr />
-                <p class="fs-5 mb-2">3 Bedroom House</p>
-                <p class="fw-bold text-success fs-4">USD 120,000</p>
-              </div>
+          <!-- Design Features -->
+          <div class="col-md-4">
+            <h5 style="font-weight: 400" class="lead mb-3">Design Features</h5>
+            <ul class="list-unstyled features-list">
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> En-suite bedrooms</li>
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> Spacious living and dining area</li>
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> Walk-in closets</li>
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> Maids quarter</li>
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> Terrace</li>
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> Balcony</li>
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> Gourmet kitchens with engineered stone countertops</li>
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> On-site power and water</li>
+              <li><i style="color: #bd9448; font-size: 1.2rem;" class="fas fa-check fa-fw"></i> State-of-art quality</li>
+            </ul>
+          </div>
+
+          <!-- Price Box -->
+          <div
+            class="col-md-4 d-flex flex-column align-items-center justify-content-center text-center"
+          >
+            <div
+              style="background-color: #001f3f"
+              class="price-box p-4 rounded shadow-sm mb-3"
+            >
+              <p style="font-size: 1.5rem" class="mb-1 text-light lead">
+                Luxurious Residences from
+              </p>
+              <h3
+                class="lead"
+                style="color: #bd9448; font-size: 1.5rem; font-weight: bold"
+              >
+                USD 310,500
+              </h3>
+            </div>
+            <p class="text-muted mb-3">
+              Convenient local and international partners for easy payment
+            </p>
+            <div
+              class="bank-logos d-flex flex-wrap justify-content-center align-items-center gap-4"
+            >
+              <a href="https://www.ecobank.com/personal-banking" target="_blank">
+                <img alt="Ecobank" height="50" src="images/logo-ecobank.svg" />
+              </a>
+              <a href="https://www.fidelitybank.com.gh/" target="_blank">
+                <img
+                  alt="Fidelity Bank"
+                  height="50"
+                  src="images/logo-fidelity-bank.svg"
+                />
+              </a>
+              <a href="https://www.firstnationalbank.com.gh/" target="_blank">
+                <img src="images/logo-fnb.svg" alt="FNB" height="50" />
+              </a>
+              <a href="https://www.republicghana.com/" target="_blank">
+                <img
+                  src="images/logo-republic-bank.svg"
+                  alt="Republic Bank"
+                  height="80"
+                />
+              </a>
+              <a href="https://www.stanbicbank.com.gh/gh/personal" target="_blank">
+                <img
+                  src="images/logo-stanbic-bank.jpg"
+                  alt="Stanbic Bank"
+                  height="50"
+                />
+              </a>
+              <a href="https://www.wellsfargo.com/" target="_blank">
+                <img
+                  src="images/logo-wells-fargo.svg"
+                  alt="Wells Fargo"
+                  height="80"
+                />
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Site Layout Section -->
-    <section class="py-5 bg-white">
+   <!-- Floor Plans Section -->
+    <section class="floor-plans py-5">
       <div class="container">
-        <h2 class="text-center fw-bold mb-4">Site Layout Plans</h2>
-        <p class="text-center mb-5">
-          Explore the master layout of Liberty Gardens Estate and the phased
-          development roadmap.
-        </p>
+        <h2 class="section-title2 text-left mb-5 lead" style="color: #001f3f; font-size: 2rem;">
+          Floor Plans
+        </h2>
 
-        <div class="row g-4">
-          <!-- General Layout -->
+        <div class="row g-5">
+          <!-- Type A Townhouse -->
           <div class="col-md-6 text-center">
-            <div class="card shadow-sm border-0 h-100">
+            <img
+              src="images/hero-01.jpg"
+              class="img-fluid rounded shadow-sm mb-3 hero-img"
+              alt="Type A Townhouse"
+            />
+            <h5 class="fw-bold mb-1" style="color: #001f3f">Type A Townhouse</h5>
+            <p class="text-muted mb-4">(300 m² / 3,229 ft²)</p>  
+
+            <!-- Floor Plan Image -->
+            <div class="floor-images mb-3">
               <img
-                src="images/general-layout.jpg"
-                alt="General Layout of Site"
-                class="img-fluid rounded-top zoomable"
+                src="images/floor-plan-type-a-tn.jpg"
+                class="img-fluid rounded floor-img shadow-sm"
+                alt="Floor Plans for Type A"
                 onclick="openFullscreen(this)"
               />
-              <div class="card-body bg-light">
-                <h5 class="fw-bold mb-2">General Layout of Site</h5>
-                <p class="text-muted mb-3">
-                  A complete overview of the estate, showing residential areas,
-                  amenities, and roads.
-                </p>
-                <!-- Buttons -->
-                <a
-                  href="images/general-layout.jpg"
-                  class="btn btn-outline-primary btn-sm me-2"
-                  download
-                  target="_blank"
-                >
-                  <i class="bx bx-download"></i> Download Plan
-                </a>
-                <a
-                  href="https://view.ricoh360.com/3e10f677-891f-47e4-83bb-9b381eef793c"
-                  class="btn btn-warning btn-sm"
-                >
-                  <i class="bx bx-street-view"></i> Take a Tour
-                </a>
-              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex justify-content-center mb-3">
+              <a href="#" class="btn btn-outline-gold">
+                <i class="fas fa-street-view"></i> Virtual Tour
+              </a>
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <a href="#" class="btn btn-gold" onclick="alert('Brochure Not Ready')">
+                Download Brochure <i class="fas fa-download fa-xs"></i>
+              </a>
             </div>
           </div>
 
-          <!-- Phasing Plan -->
+          <!-- Type B Townhouse -->
           <div class="col-md-6 text-center">
-            <div class="card shadow-sm border-0 h-100">
+            <img
+              src="images/hero-02.jpg"
+              class="img-fluid rounded shadow-sm mb-3 hero-img"
+              alt="Type B Townhouse"
+            />
+            <h5 class="fw-bold mb-1" style="color: #001f3f">Type B Townhouse</h5>
+            <p class="text-muted mb-4">(269 m² / 2,895 ft²)</p>
+
+            <!-- Floor Plan Image -->
+            <div class="floor-images mb-3">
               <img
-                src="images/phasing-plan.jpg"
-                alt="Phasing Plan of Site"
-                class="img-fluid rounded-top zoomable"
+                src="images/floor-plan-type-b-tn.jpg"
+                class="img-fluid rounded floor-img shadow-sm"
+                alt="Floor Plans for Type B"
                 onclick="openFullscreen(this)"
               />
-              <div class="card-body bg-light">
-                <h5 class="fw-bold mb-2">Phasing Plan of Site</h5>
-                <p class="text-muted mb-3">
-                  View the estate’s development timeline, detailing current and
-                  future construction phases.
-                </p>
-                <!-- Buttons -->
-                <a
-                  href="images/phasing-plan.jpg"
-                  class="btn btn-outline-primary btn-sm me-2"
-                  download
-                  target="_blank"
-                >
-                  <i class="bx bx-download"></i> Download Plan
-                </a>
-                <a
-                  href="https://view.ricoh360.com/3e10f677-891f-47e4-83bb-9b381eef793c"
-                  class="btn btn-warning btn-sm"
-                >
-                  <i class="bx bx-street-view"></i> Take a Tour
-                </a>
-              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex justify-content-center mb-3">
+              <a href="#" class="btn btn-outline-gold">
+                <i class="fas fa-street-view"></i> Virtual Tour
+              </a>
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <a href="#" class="btn btn-gold" onclick="alert('Brochure Not Ready')">
+                Download Brochure <i class="fas fa-download fa-xs"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -331,8 +413,161 @@
       <div class="caption" id="modalCaption"></div>
     </div>
 
+
+<!-- LOCATION SECTION -->
+<section class="location-section py-5" style="background-color: #f9f9f9;">
+  <div class="container">
+    <!-- Title -->
+    <h2 
+      class="section-title2 mb-4 lead" 
+      style="
+        position: relative;
+        font-size: 2.2rem;
+        color: #163241;
+        font-weight: 500;
+        margin-bottom: 2rem;
+      "
+    >
+      Location
+      <span 
+        style="
+          content: '';
+          display: block;
+          width: 160px;
+          border-top: 2px dotted #bd9448;
+          position: absolute;
+          top: 50%;
+          left: 110%;
+          transform: translateY(-50%);
+        "
+      ></span>
+    </h2>
+
+    <!-- Map Card -->
+    <div 
+      class="map-card mb-5" 
+      style="
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      "
+    >
+      <div 
+        class="map-frame" 
+        style="
+          width: 100%;
+          height: 550px; /* Increased height */
+          position: relative;
+          border-radius: 10px;
+          overflow: hidden;
+          background: #eaeaea;
+        "
+      >
+        <!-- Info Bubble -->
+        <div 
+          class="map-info" 
+          style="
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            background: #fff;
+            padding: 12px 14px;
+            border-radius: 6px;
+            box-shadow: 0 6px 14px rgba(22, 38, 49, 0.12);
+            font-size: 14px;
+            z-index: 10;
+            min-width: 200px;
+          "
+        >
+          <div class="title" style="font-weight: 600; color: #163241;">Liberty Gardens Estate</div>
+          <div class="address" style="color: #5d6b71;">1 Liberty Drive, East Legon Hills, Ghana</div>
+          <div class="rating" style="color: #bd9448;">★ 4.8 — 63 reviews</div>
+        </div>
+
+        <!-- Live Google Map Embed -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.049870890181!2d-0.07315698573518227!3d5.683848933504235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10207947b8c95ad9%3A0x83c14ffec9c2d9cb!2sEast%20Legon%20Hills!5e0!3m2!1sen!2sgh!4v1699451145662!5m2!1sen!2sgh"
+          width="100%"
+          height="100%"
+          style="border: 0;"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+
+        <!-- Map Marker Overlay -->
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          style="
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+            pointer-events: none;
+          "
+        >
+          <path
+            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+            fill="#bd9448"
+          />
+          <circle cx="12" cy="9" r="2.5" fill="#fff" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA Section -->
+<section 
+  class="cta text-center" 
+  style="
+    background: linear-gradient(145deg, rgba(183, 140, 76, 1) 27%, rgba(183, 140, 76, 0.8) 100%);
+    padding: 60px 20px;
+    margin-top: 0;
+    border-radius: 8px;
+    box-shadow: inset 0 -4px 15px rgba(0,0,0,0.1);
+  "
+>
+  <h3 
+    class="lead" 
+    style="
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    "
+  >
+    Still have more questions about our properties? <br>
+    Interested in reserving your dream unit?
+  </h3>
+
+  <button
+    class="btn btn-contact text-white"
+    type="button"
+    style="
+      background-color: #001f3f;
+      font-size: 1.1rem;
+      padding: 12px 28px;
+      border-radius: 6px;
+      border: none;
+      transition: background-color 0.3s ease;
+    "
+    onclick="location.href='contact.html'"
+    onmouseover="this.style.backgroundColor='#003366'"
+    onmouseout="this.style.backgroundColor='#001f3f'"
+  >
+    Contact Us
+  </button>
+</section>
+
+
     <!-- Footer -->
-    <footer class="bg-dark text-white pt-5 pb-4">
+    <footer style="background-color: #001f3f;" class="text-white pt-5 pb-4">
       <div class="container">
         <div class="row gy-4">
           <!-- Contact Info -->
@@ -439,6 +674,15 @@
       function closeFullscreen() {
         document.getElementById("fullscreenModal").style.display = "none";
       }
+
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 0) {
+          navbar.classList.add("navbar-shadow");
+        } else {
+          navbar.classList.remove("navbar-shadow");
+        }
+      });
     </script>
   </body>
 </html>
