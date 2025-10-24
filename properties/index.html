@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Properties | Liberty Gardens Estate</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top shadow-sm"
+      style="
+        background: #fff;
+        color: #001f3f;
+        font-weight: 400;
+        font-size: 1.2rem;
+      "
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <h4 class="m-0">Liberty Gardens Estate</h4>
+        </a>
+
+        <!-- Navbar toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about/">About</a>
+            </li>
+            <li class="nav-item">
+              <a
+                style="background-color: #1a3850; color: #ffffff"
+                class="nav-link btn"
+                href=""
+                >Properties</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="#"
+                onclick="openEmail()"
+                class="btn text-light ms-2"
+                style="
+                  background-color: #bd9448;
+                  border-radius: 8px;
+                  font-weight: 500;
+                "
+              >
+                Inquire
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Page content -->
+      <div class="container" style="margin-top: 100px">
+        <p
+          class="header-title text-left lead"
+          style="
+            font-size: 3rem;
+            background-color: #fff;
+            color: #001f3f;
+            margin: 0;
+            padding: 10px 20px;
+          "
+        >
+          Willow Lane
+        </p>
+      </div>
+
+      <!-- Properties Section -->
+      <section class="py-5" style="background-color: #001f3f">
+        <div class="container">
+          <!-- Title Above Slideshow -->
+
+          <!-- Slideshow with Fade Effect -->
+          <div
+            id="propertiesCarousel"
+            class="carousel slide carousel-fade shadow rounded overflow-hidden w-100"
+            data-bs-ride="carousel"
+            style="max-width: 100vw"
+          >
+            <div class="carousel-inner">
+              <!-- Front View -->
+              <div class="carousel-item active">
+                <img
+                  src="../images/slide1.jpeg"
+                  class="d-block w-100"
+                  alt="Front View"
+                />
+              </div>
+
+              <!-- Back View -->
+              <div class="carousel-item">
+                <img
+                  src="../images/slide2.jpeg"
+                  class="d-block w-100"
+                  alt="Back View"
+                />
+              </div>
+
+              <!-- Side View -->
+              <div class="carousel-item">
+                <img
+                  src="../images/slide3.jpeg"
+                  class="d-block w-100"
+                  alt="Side View"
+                />
+              </div>
+
+              <!-- Interior View -->
+              <div class="carousel-item">
+                <img
+                  src="../images/about-estate.jpeg"
+                  class="d-block w-100"
+                  alt="Interior View"
+                />
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#propertiesCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#propertiesCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#propertiesCarousel"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#propertiesCarousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#propertiesCarousel"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#propertiesCarousel"
+                data-bs-slide-to="3"
+              ></button>
+            </div>
+          </div>
+
+          <!-- Logo Between Slideshow & Intro -->
+          <div class="text-center my-4">
+            <img
+              src="../images/logo-inverted.png"
+              alt="Liberty Gardens Logo"
+              class="img-fluid no-zoom"
+              style="max-width: 180px"
+            />
+            <p
+              style="font-size: 1.5rem; color: #bd9448"
+              class="text-uppercase lead"
+            >
+              Willow Lane
+            </p>
+          </div>
+
+          <div class="mt-3 text-center text-light">
+            <p style="font-size: 1.9rem; color: #bd9448" class="lead">
+              Introducing Willow Lane, an exceptional residential enclave where
+              <br />
+              elegance meets tranquility.
+            </p>
+          </div>
+          <!-- Intro Text Below Logo -->
+          <div class="mt-3 text-center text-light">
+            <p style="font-size: 1rem; font-weight: 400" class="">
+              Set within the embrace of nature’s serenity, this distinguished
+              real estate project boasts a collection of over 100 <br />
+              thoughtfully crafted homes, creating a harmonious blend of
+              architectural excellence and refined living.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="features-section py-5">
+        <div class="container">
+          <h2 style="font-size: 2rem" class="section-title text-left mb-5 lead">
+            Features & Amenities
+          </h2>
+
+          <div class="row">
+            <!-- Community Amenities -->
+            <div class="col-md-4">
+              <h5 style="font-weight: 400" class="lead mb-3">
+                Community Amenities and <br />
+                Features
+              </h5>
+              <ul class="list-unstyled features-list">
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  Gated community
+                </li>
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  24/7 security
+                </li>
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  Garden
+                </li>
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  Children’s playground
+                </li>
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  Multipurpose Sports Court
+                </li>
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  Internal road networks
+                </li>
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  On-site facility management office
+                </li>
+              </ul>
+            </div>
+
+            <!-- Design Features -->
+            <div class="col-md-4">
+              <h5 style="font-weight: 400" class="lead mb-3">
+                Design Features
+              </h5>
+              <ul class="list-unstyled features-list">
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  En-suite bedrooms
+                </li>
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  Spacious living and dining area
+                </li>
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  Walk-in closets
+                </li>
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  Terrace
+                </li>
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  Balcony
+                </li>
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  Gourmet kitchens with engineered stone countertops
+                </li>
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  On-site power and water
+                </li>
+                <li>
+                  <i
+                    style="color: #bd9448; font-size: 1.2rem"
+                    class="fas fa-check fa-fw"
+                  ></i>
+                  State-of-art quality
+                </li>
+              </ul>
+            </div>
+
+            <!-- Price Box -->
+            <div
+              class="col-md-4 d-flex flex-column align-items-center justify-content-center text-center"
+            >
+              <div
+                style="background-color: #001f3f"
+                class="price-box p-4 rounded shadow-sm mb-3"
+              >
+                <p style="font-size: 1.5rem" class="mb-1 text-light lead">
+                  Luxurious Residences from
+                </p>
+                <h3
+                  class="lead"
+                  style="color: #bd9448; font-size: 1.5rem; font-weight: bold"
+                >
+                  USD 120,000
+                </h3>
+              </div>
+              <p class="text-muted mb-3">
+                Convenient local and international partners for easy payment
+              </p>
+              <div
+                class="bank-logos d-flex flex-wrap justify-content-center align-items-center gap-4"
+              >
+                <a
+                  href="https://www.ecobank.com/personal-banking"
+                  target="_blank"
+                >
+                  <img
+                    alt="Ecobank"
+                    height="50"
+                    src="../images/logo-ecobank.svg"
+                  />
+                </a>
+                <a href="https://www.fidelitybank.com.gh/" target="_blank">
+                  <img
+                    alt="Fidelity Bank"
+                    height="50"
+                    src="../images/logo-fidelity-bank.svg"
+                  />
+                </a>
+                <a href="https://www.firstnationalbank.com.gh/" target="_blank">
+                  <img src="../images/logo-fnb.svg" alt="FNB" height="50" />
+                </a>
+                <a href="https://www.republicghana.com/" target="_blank">
+                  <img
+                    src="../images/logo-republic-bank.svg"
+                    alt="Republic Bank"
+                    height="80"
+                  />
+                </a>
+                <a
+                  href="https://www.stanbicbank.com.gh/gh/personal"
+                  target="_blank"
+                >
+                  <img
+                    src="../images/logo-stanbic-bank.jpg"
+                    alt="Stanbic Bank"
+                    height="50"
+                  />
+                </a>
+                <a href="https://www.wellsfargo.com/" target="_blank">
+                  <img
+                    src="../images/logo-wells-fargo.svg"
+                    alt="Wells Fargo"
+                    height="80"
+                  />
+                </a>
+                <a href="https://www.gtbghana.com/" target="_blank">
+                  <img src="../images/GTBank.jpg" alt="GTBank" height="80" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Floor Plans Section -->
+      <section class="floor-plans py-5">
+        <div class="container">
+          <h2
+            class="section-title2 text-left mb-5 lead"
+            style="color: #001f3f; font-size: 2rem"
+          >
+            Floor Plans
+          </h2>
+
+          <div class="row g-5">
+            <!-- Type A Townhouse -->
+            <div class="col-md-6 text-center">
+              <img
+                src="../images/hero-01.jpg"
+                class="img-fluid rounded shadow-sm mb-3 hero-img"
+                alt="Type A Townhouse"
+              />
+              <h5 class="fw-bold mb-1" style="color: #001f3f">
+                Type A Townhouse
+              </h5>
+              <p class="text-muted mb-4">(300 m² / 3,229 ft²)</p>
+
+              <!-- Floor Plan Image -->
+              <div class="floor-images mb-3">
+                <img
+                  src="../images/general-layout.jpg"
+                  class="img-fluid rounded floor-img shadow-sm"
+                  alt="Floor Plans for Type A"
+                  onclick="openFullscreen(this)"
+                />
+              </div>
+
+              <!-- Buttons -->
+              <div class="d-flex justify-content-center mb-3">
+                <a href="#" class="btn btn-outline-gold">
+                  <i class="fas fa-street-view"></i> Virtual Tour
+                </a>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <a
+                  href="#"
+                  class="btn btn-gold"
+                  onclick="alert('Brochure Not Ready')"
+                >
+                  Download Brochure <i class="fas fa-download fa-xs"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Type B Townhouse -->
+            <div class="col-md-6 text-center">
+              <img
+                src="../images/hero-02.jpg"
+                class="img-fluid rounded shadow-sm mb-3 hero-img"
+                alt="Type B Townhouse"
+              />
+              <h5 class="fw-bold mb-1" style="color: #001f3f">
+                Type B Townhouse
+              </h5>
+              <p class="text-muted mb-4">(269 m² / 2,895 ft²)</p>
+
+              <!-- Floor Plan Image -->
+              <div class="floor-images mb-3">
+                <img
+                  src="../images/phasing-plan.jpg"
+                  class="img-fluid rounded floor-img shadow-sm"
+                  alt="Floor Plans for Type B"
+                  onclick="openFullscreen(this)"
+                />
+              </div>
+
+              <!-- Buttons -->
+              <div class="d-flex justify-content-center mb-3">
+                <a href="#" class="btn btn-outline-gold">
+                  <i class="fas fa-street-view"></i> Virtual Tour
+                </a>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <a
+                  href="#"
+                  class="btn btn-gold"
+                  onclick="alert('Brochure Not Ready')"
+                >
+                  Download Brochure <i class="fas fa-download fa-xs"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fullscreen Viewer Modal -->
+      <div
+        id="fullscreenModal"
+        class="fullscreen-modal"
+        onclick="closeFullscreen()"
+      >
+        <img id="fullscreenImg" />
+        <span class="close-btn" onclick="closeFullscreen()">×</span>
+      </div>
+
+      <!-- Image Modal -->
+      <div id="imgModal" class="modal-img" onclick="closeModal()">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content-img" id="modalImage" />
+        <div class="caption" id="modalCaption"></div>
+      </div>
+
+      <!-- LOCATION SECTION -->
+      <section class="location-section py-5" style="background-color: #f9f9f9">
+        <div class="container">
+          <!-- Title -->
+          <h2
+            class="section-title2 mb-4 lead"
+            style="
+              position: relative;
+              font-size: 2.2rem;
+              color: #163241;
+              font-weight: 500;
+              margin-bottom: 2rem;
+            "
+          >
+            Location
+            <span
+              style="
+                content: '';
+                display: block;
+                width: 160px;
+                border-top: 2px dotted #bd9448;
+                position: absolute;
+                top: 50%;
+                left: 110%;
+                transform: translateY(-50%);
+              "
+            ></span>
+          </h2>
+
+          <!-- Map Card -->
+          <div
+            class="map-card mb-5"
+            style="
+              position: relative;
+              border-radius: 10px;
+              overflow: hidden;
+              box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            "
+          >
+            <div
+              class="map-frame"
+              style="
+                width: 100%;
+                height: 550px; /* Increased height */
+                position: relative;
+                border-radius: 10px;
+                overflow: hidden;
+                background: #eaeaea;
+              "
+            >
+              <!-- Info Bubble -->
+              <div
+                class="map-info"
+                style="
+                  position: absolute;
+                  top: 18px;
+                  left: 18px;
+                  background: #fff;
+                  padding: 12px 14px;
+                  border-radius: 6px;
+                  box-shadow: 0 6px 14px rgba(22, 38, 49, 0.12);
+                  font-size: 14px;
+                  z-index: 10;
+                  min-width: 200px;
+                "
+              >
+                <div class="title" style="font-weight: 600; color: #163241">
+                  Liberty Gardens Estate
+                </div>
+                <div class="address" style="color: #5d6b71">
+                  1 Liberty Drive, East Legon Hills, Ghana
+                </div>
+                <div class="rating" style="color: #bd9448">
+                  ★ 4.8 — 63 reviews
+                </div>
+              </div>
+
+              <!-- Live Google Map Embed -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.049870890181!2d-0.07315698573518227!3d5.683848933504235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10207947b8c95ad9%3A0x83c14ffec9c2d9cb!2sEast%20Legon%20Hills!5e0!3m2!1sen!2sgh!4v1699451145662!5m2!1sen!2sgh"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+
+              <!-- Map Marker Overlay -->
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                style="
+                  position: absolute;
+                  left: 50%;
+                  top: 45%;
+                  transform: translate(-50%, -50%);
+                  z-index: 5;
+                  pointer-events: none;
+                "
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                  fill="#bd9448"
+                />
+                <circle cx="12" cy="9" r="2.5" fill="#fff" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section
+        class="cta text-center"
+        style="
+          background: linear-gradient(
+            145deg,
+            rgba(183, 140, 76, 1) 27%,
+            rgba(183, 140, 76, 0.8) 100%
+          );
+          padding: 60px 20px;
+          margin-top: 0;
+          border-radius: 8px;
+          box-shadow: inset 0 -4px 15px rgba(0, 0, 0, 0.1);
+        "
+      >
+        <h3
+          class="lead"
+          style="
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 1.6;
+            margin-bottom: 30px;
+          "
+        >
+          Still have more questions about our properties? <br />
+          Interested in reserving your dream unit?
+        </h3>
+
+        <button
+          class="btn btn-contact text-white"
+          type="button"
+          style="
+            background-color: #001f3f;
+            font-size: 1.1rem;
+            padding: 12px 28px;
+            border-radius: 6px;
+            border: none;
+            transition: background-color 0.3s ease;
+          "
+          onclick="location.href='contact.html'"
+          onmouseover="this.style.backgroundColor='#003366'"
+          onmouseout="this.style.backgroundColor='#001f3f'"
+        >
+          Contact Us
+        </button>
+      </section>
+
+      <!-- Footer -->
+      <footer style="background-color: #001f3f" class="text-white pt-5 pb-4">
+        <div class="container">
+          <div class="row gy-4">
+            <!-- Contact Info -->
+            <div class="col-md-4">
+              <h5 class="fw-bold mb-3">Contact Us</h5>
+              <p class="mb-1">
+                <i class="bx bx-phone-call text-warning me-2"></i> +233 245 002
+                044
+              </p>
+              <p class="mb-1">
+                <i class="bx bx-envelope text-warning me-2"></i>
+                info@libertygardenestate.com
+              </p>
+              <p>
+                <i class="bx bx-map text-warning me-2"></i> Liberty Gardens
+                Estate, Accra, Ghana
+              </p>
+            </div>
+
+            <!-- About -->
+            <div class="col-md-4">
+              <h5 class="fw-bold mb-3">Join Our Community</h5>
+              <p>
+                Follow us on social media for updates,<br />
+                promotions, and lifestyle tips.
+              </p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-4">
+              <h5 class="fw-bold mb-3">Connect With Us</h5>
+              <div class="d-flex gap-3">
+                <a
+                  href="https://facebook.com"
+                  class="text-white fs-4"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  <i class="bx bxl-facebook-circle"></i>
+                </a>
+                <a
+                  href="https://instagram.com"
+                  class="text-white fs-4"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <i class="bx bxl-instagram-alt"></i>
+                </a>
+                <a
+                  href="https://twitter.com"
+                  class="text-white fs-4"
+                  target="_blank"
+                  aria-label="Twitter"
+                >
+                  <i class="bx bxl-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Line -->
+          <div class="text-center mt-4 border-top pt-3">
+            <p class="mb-0">
+              &copy; 2025 Liberty Gardens Estate. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-- WhatsApp Floating Button -->
+      <div class="whatsapp-container">
+        <div class="whatsapp-tooltip show">Message us 👋</div>
+        <a
+          href="https://wa.me/233500016673?text=Hello%20Liberty%20Gardens%20Estate"
+          class="whatsapp-float"
+          target="_blank"
+          aria-label="Chat on WhatsApp"
+        >
+          <i class="bx bxl-whatsapp"></i>
+        </a>
+      </div>
+
+      <script>
+        function openModal(src, caption) {
+          document.getElementById("imgModal").style.display = "block";
+          document.getElementById("modalImage").src = src;
+          document.getElementById("modalCaption").innerText = caption;
+        }
+
+        function closeModal() {
+          document.getElementById("imgModal").style.display = "none";
+        }
+
+        function openFullscreen(imgElement) {
+          const modal = document.getElementById("fullscreenModal");
+          const modalImg = document.getElementById("fullscreenImg");
+          modal.style.display = "flex";
+          modalImg.src = imgElement.src;
+        }
+
+        function closeFullscreen() {
+          document.getElementById("fullscreenModal").style.display = "none";
+        }
+
+        window.addEventListener("scroll", function () {
+          const navbar = document.querySelector(".navbar");
+          if (window.scrollY > 0) {
+            navbar.classList.add("navbar-shadow");
+          } else {
+            navbar.classList.remove("navbar-shadow");
+          }
+        });
+
+        // open email
+        function openEmail() {
+          const email = "info@libertygardenestate.com";
+          const subject = "Inquiry About Liberty Gardens Estate";
+          const body = `Hello Liberty Gardens Estate,
+
+I would like to learn more about your properties.
+
+Regards,`;
+
+          const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+            subject
+          )}&body=${encodeURIComponent(body)}`;
+          const isMobile = /Android|iPhone|iPad|iPod/i.test(
+            navigator.userAgent
+          );
+
+          try {
+            // Always try default email app first
+            window.location.href = mailtoLink;
+
+            // Optional fallback: if on desktop and mailto fails, open Gmail
+            if (!isMobile) {
+              setTimeout(() => {
+                window.open(
+                  `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(
+                    subject
+                  )}&body=${encodeURIComponent(body)}`,
+                  "_blank"
+                );
+              }, 2000);
+            }
+          } catch (error) {
+            console.error("Email link failed:", error);
+          }
+        }
+
+        // Trigger fade-in once DOM is ready
+        document.addEventListener("DOMContentLoaded", () => {
+          requestAnimationFrame(() => {
+            document.body.classList.add("fade-in");
+          });
+        });
+      </script>
+    </main>
+  </body>
+</html>
